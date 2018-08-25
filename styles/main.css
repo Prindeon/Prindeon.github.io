@@ -5,6 +5,11 @@ body {
 	margin:0px 2px;
 }
 
+body.gallery {
+	background: url(images/gallerybg.jpg) no-repeat center venter fixed;
+	
+}
+
 header {
 	background-color:#666;
 	margin: 0;
