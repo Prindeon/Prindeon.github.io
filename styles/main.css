@@ -72,6 +72,7 @@ header h1 {
 	display: inline-block;
 	font-family: sans-serif;
 	text-shadow: 2px;
+	font-size:2.5vw;
 }
 
 
@@ -105,6 +106,7 @@ header ul li {
 	background-color: none;
 	border-bottom: none;
 	font-size: 20px;
+	font-size:1vw;
 }
 
 ul li a {
@@ -114,6 +116,7 @@ ul li a {
     font-size: 16px;
     cursor: pointer;
     display: inline-block;
+    font-size:1vw;
 }
 
 ul li a:hover {
@@ -121,14 +124,29 @@ ul li a:hover {
 	color: white;
 }
 
+div p {
+	font-family: sans-serif;
+	color: white;
+	background-color: #829c60;
+	border: 1px;
+	border-radius: 2px;
+	float: left;
+	font-size: 1vw;
+	padding: 10px;
+	margin: 2px;
+}
+
 p {
-	color:white;
-	padding:5px 7px;
-	border:2px;
-	border-radius:5px;
-	background:#000;
-	float:left;
-	margin:0px 10px 0px 0px;
+	font-family: monospace;
+	font-size: 20px;
+	margin-right: 250px;
+}
+
+#more {display: none;}
+
+.date {
+	color: #999;
+	font-size: 0.8vw;
 }
 
 .col {
@@ -141,7 +159,10 @@ p {
 	float:left;
 }
 
-
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 .tidslinje {
 		background-color:#666;
@@ -153,11 +174,26 @@ h4 {
 	margin: 10px;
 }
 
-div p {
-	padding: 10px;
-	margin: 2px;
+#readmore {
+  padding: 3px 10px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #829c60;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 7px #888;
 }
 
+#readmore:hover {background-color: #728c60}
+
+#readmore:active {
+  background-color: ##8290;
+  box-shadow: 0 3px #444;
+  transform: translateY(4px);
+}
 
 .button {
   padding: 15px 25px;
@@ -178,7 +214,6 @@ div p {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-
 }
 
 .button_lille {
@@ -226,16 +261,45 @@ div p {
 
 
 
-@meida screen and (max-width:959) {
+@meida screen and (max-width: 800px) {
 
-	body {
-		width:100%;
-	}
 	header {
-		width:100%;
+		margin:0%;
+
 	}
+
+	header h1 {
+		display: block;
+		text-align: left;
+		font-size:5vw;
+	}
+
+	header ul li {
+		float: none;
+		display: block;
+		text-align: left;
+		margin: 0px;
+		font-size:2vw;
+	}
+
+	ul li a {
+		float: none;
+		display: block;
+		text-align: left;
+		margin: 0px;
+		font-size:2vw;
+	}
+
+	.col {
+		float: none;
+	}
+
+	p {
+		float: none;
+	}
+
 	main {
-		width:100%;
+		padding: 0px 0px 1000px 0px;
 	}
 }
 
