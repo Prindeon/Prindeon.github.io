@@ -75,6 +75,7 @@ details:active {
 	color: white;
 }
 
+
 details h4, details h3 {
 	text-align: left;
 }
@@ -111,6 +112,7 @@ h5 {
 	padding:20px;
 	margin:20px;
 }
+
 ul {
 	display:inline;
 }
