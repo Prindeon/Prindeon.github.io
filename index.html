@@ -20,24 +20,47 @@
 				<strong><li><i class="fa fa-home"></i> Hjem</li></strong>
 				<li><a href="gallery.html"><i class="fa fa-image"></i> Galleri</a></li>
 				<li><a href="info.html"><i class="fa fa-align-left"></i> Tidslinje</a></li>
+
+				<div id="audio">
+									<div id="læselyd">Til når du vil høre lidt beroligende toner mens du læser</div>
+					<audio controls>
+				   		<source src="jazz.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>	
+					
+				</div>	
 			</ul>	
 		</header>
 	<main>		<br><br>
 				<h2><strong>Hej og velkommen til min blog om mit år i Tyskland</strong></h2>
-
+<div id="click">
+					<a href="Schickel.html">
+							<img src="images/click.JPG" width=400 height=150></a>
+				</div>
 				<div class="col">På denne hjemmeside som jeg selv har bygget, kommer du til at se <br>billeder og oplevelser som jeg vil dele i løbet af året.<br>Jeg kommer til at lægge noget nyt ind løbende.<br>Højest sandsyndeligt 1 gang om ugen, så hold dig selv opdateret.<br> Og del gerne linket til hjemmesiden med andre som du synes også skal følge med!</div>
 
 				<em><div class="col">LINK: Prindeon.github.io</div></em>
+				<br><br>
+
+					<div id="wrapper">
+
+								<div id="demo"></div><br>
+								<div id="timer">Timer til næste opslag</div>
+
+					</div>
 
 				<strong>
 				<div class="notes">
 					<p>LOG NOTES:</p>
 				</div>
+		
+
 			<ul class="updates">
+				<li> 1.7: Jeg har lavet et par "tweaks"<br>til hovedsiden som du nok godt kan se.<br><br>-Der er blevet tilføjet musik!<br>-Du kan nu springedirekte til det <br>nyeste afsnit på billedet!<br>-Du kan nu se hvornår jeg lægger et <br>nyt opslag op!<br>En enkel note. Hvis du ser<br>dette på en mobil-enhed<br>undskylder jeg dybt for hvor<br>hæsligt her ser ud! ;)<br><em class="date">26/09/18</em></li><br>
 				<li> 1.6: Du kan nu se de allernyeste afsnit<br>som det første når du trykker ind på<br>et afsnit! Du kan nu også se hvilket stykke<br>tekst der er aktuelt i øjeblikket<br><em class="date">23/09/18</em></li><br>
-				<li> 1.5: Lidt optimering rundt omkring.<br>Der er blevet støvsuget, græsset er slået,<br>og skraldet er blevet hentet.<br>Hop til <em>tidslinje</em> for at se det nye afsnit:<br><em>Schickel!</em><br>Galleri er også blevet optimeret og<br>organiseret!<br><em class="date">29/08/18</em></li><br>
-				<li> 1.4: Et par forbedringer i layoutet:<br>Du kan nu F.eks. trykke på overskriften<br>øverst på siden for at komme til "hjem"<br>Alle billeder på siden også blevet<br> komprimeret, så nu indlæser de betydeligt<br>hurtigere! <br><em class="date">28/08/18</em></li><br>
 				<span id="dots">...</span><span id="more">
+				<li> 1.5: Lidt optimering rundt omkring.<br>Der er blevet støvsuget, græsset er slået,<br>og skraldet er blevet hentet.<br>Hop til <em>tidslinje</em> for at se det nye afsnit:<br><em>Schickel!</em><br>Galleri er også blevet optimeret og<br>organiseret!<br><em class="date">29/08/18</em></li><br>
+				<li> 1.4: Et par forbedringer i layoutet:<br>Du kan nu F.eks. trykke på overskriften<br>øverst på siden for at komme til "hjem"<br>Alle billeder på siden også blevet<br> komprimeret, så nu indlæser de betydeligt<br>hurtigere! <br><em class="date">28/08/18</em></li><br>			
 				<li> 1.3: Totalt redesign af hele hjemmesiden. <br><em class="date">26/08/18</em></li><br>				
 				<li> 1.2: Nu virker billeder igen!! :) Man skal<br>bare lige give dem lidt tid til at indlæse.<br>Ca. 3-4 minutter. <br><em class="date">25/08/18</em></li><br>
 				<li> 1.1: OBS! Billeder virker ikke pt. <br><em class="date">24/08/18</em></li><br>
@@ -45,6 +68,7 @@
 				</strong>
 			<button onclick="myFunction()" id="readmore">Læs mere</button>
 	</span></ul>
+
 
 
 	<br><br><br><br><br>
@@ -67,5 +91,34 @@ function myFunction() {
   }
 }
 </script>
+
+<!-- Display the countdown timer in an element -->
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 30, 2018 21:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+}, 1000);
+</script>
+
 
 </body>

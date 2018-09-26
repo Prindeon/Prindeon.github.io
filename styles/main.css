@@ -38,10 +38,62 @@ div p {
 	padding: 10px;
 }
 
+.col {
+	color:white;
+	padding:5px 6px;
+	border:1px;
+	border-radius:1px;
+	background:#999;
+	margin:0% 0% 0% 1%;
+	float:left;
+	clear: right;
+}
+
+#wrapper {
+	font-family: monospace;
+	font-size: 20px;
+}
+
+#læselyd {
+	font-family: monospace;
+
+
+}
+
+#timer {
+	background: white;
+	border-radius: 5px;
+	float: left;
+	margin-left: 1%;
+	padding: .2% .2%;
+}
+
+#demo {
+	background: #829c60;
+	border-radius: 5px;
+	float: left;
+	margin-left: 1%;
+	padding: 0% .5%;
+}
+
+#click {
+	clear: both;
+	float: left;
+	position: relative;
+}
+
+#audio {
+	float: right;
+	margin: 0% 5%;
+	padding: 0% 5%;
+}
+
 .notes {
 	float: right;
 	font-family: monospace;
 	margin-right: 5%;
+	clear: left;
+	position: relative;
 }
 
 .updates {
@@ -50,8 +102,9 @@ div p {
 	float: right;
 	padding: 2%;
 	border-radius: 2px;
-	clear: right;
 	margin: 0%;
+	clear: both;
+	position: relative;
 }
 
 details {
@@ -63,6 +116,7 @@ details {
 	background-color: white;
 	border: 7px;
 	border-color: #829c60;
+	clear: both;
 }
 
 details:hover {
@@ -129,6 +183,7 @@ header ul li {
 	border-bottom: none;
 	background-color: none;
 	font-size: 15px;
+	clear: both;
 }
 
 ul li a {
@@ -138,6 +193,7 @@ ul li a {
     font-size: 16px;
     cursor: pointer;
     display: inline-block;
+    clear: both;
 }
 
 ul li a:hover {
@@ -159,20 +215,16 @@ p {
 	font-size: 0.8vw;
 }
 
-.col {
-	color:white;
-	padding:5px 6px;
-	border:1px;
-	border-radius:1px;
-	background:#999;
-	margin:0% 1% 3% 1%;
-	float:left;
-}
 
 img {
     max-width: 100%;
     height: auto;
 
+}
+
+audio {
+	clear: both;
+	float: left;
 }
 
 .tidslinje {
